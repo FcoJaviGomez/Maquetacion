@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.body{
+justify-content: center;
+align-content: center;
+background-color: #FF6F91;
+}
+
+.header{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 60px;
+    background-color: #845EC2;
+    background: linear-gradient(to bottom,#845EC2 75% ,#D65DB1)
+}
+.header__titulo{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header__nav{
+    background-color: #FF9671;
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: black;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.section{
+    background-color: #D65DB1;
+    width: 100vw;
+    height: px; 
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 300px;
+    gap: 20px;
+    background: linear-gradient(to bottom,#D65DB1 80%,#FF6F91)
+
+}
+
+.figure{
+width: 200px;
+height: 200px;
+box-shadow:0px 0px 10px 5px #F9F871;
+border-radius: 5px;
+
+}
+
