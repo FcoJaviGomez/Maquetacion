@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    border: 10px solid rgb(170, 170, 161);
+    border-radius: 5px;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+.header{
+    border: 5px solid rgb(9, 168, 9);
+    border-radius: 5px;
+    height: 15vh;
+    margin: 4px;
+    padding: 5px;
+    
+}
+
+.nav{
+    border: 5px solid rgb(175, 55, 125);
+    border-radius: 5px;
+    height: 5vh;
+    margin: 4px;
+    padding: 5px;
+}
+
+
+.section{
+    display: flex; 
+    justify-content: space-between;
+    height: 69vh;
+    
+}
+
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1460px;
+    border: 5px solid rgb(21, 64, 143);
+    border-radius: 5px;
+    /* height: vh; */
+    margin: 4px;
+    padding: 5px;  
+}
+
+.div{
+    width: 300px;
+    border: 5px solid rgb(175, 163, 55);
+    border-radius: 5px;
+    height: vh;
+    margin: 4px;
+    padding: 5px;   
+
+}
+
+.footer{
+    border: 5px solid rgb(175, 163, 55);
+    border-radius: 5px;
+    
+    margin: 4px;
+    padding: 5px;
+}
+
+
+.article__header{
+    border: 5px solid rgb(9, 168, 9);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.article__section{
+
+    border: 5px solid rgb(131, 52, 151);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.article__footer{
+    border: 5px solid rgb(175, 163, 55);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.aside{
+    border: 5px solid rgb(37, 158, 206);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    height: 30vh;  
+}
