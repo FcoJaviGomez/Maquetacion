@@ -118,10 +118,21 @@
 .section__article__div__precios{
     font-size: 18px;
     color: white;
+    text-align: center;
     /* flex-direction: row;
     margin: 30px; */
 
 }
+
+.section__article__div__precios1{
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    background-color: #1BC28D;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
 
 .nav__contacto{
     justify-content: center;

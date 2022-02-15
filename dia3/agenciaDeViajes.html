@@ -9,11 +9,86 @@
     <script src="https://kit.fontawesome.com/ad1fbc05e4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="agenciaDeViajes.css">
 
+
 </head>
 
-<body class="head">
+<body>
+    <header class="header">
+        <img class="header__div__img" src="logo.PNG">
+        <div> TRAVELFEEL</div>
+    </header>
+    <section class="section">
+        <img class="section__img" src="https://unate.es/wp-content/uploads/2016/02/Viajes.jpg">
+        <form>
+            <div class="article">
+                <div><input type="text" class="section__article__div" id="nombre" placeholder="Nombre">
+                </div>
+                <div><input type="text" class="section__article__div" id="origen" placeholder="Origen">
+                </div>
+                <div><input type="text" class="section__article__div" id="destino" placeholder="Destino">
+                </div>
+                <div><input type="number" class="section__article__div" id="numeroDePersonas"
+                        placeholder="Numero De Personas">
+                </div>
+                <div><input type="date" class="section__article__div" id="fecha" placeholder="Fecha">
+                </div>
+            </div>
+
+            <div class="article1">
+                <button onclick="registrar()" class="section__article__div1" type="reset">Solicitar Info</button>
+
+                <button onclick="destinosParaProbar()" class="section__article__div1" type="reset">Filtrado</button>
+            </div>
+        </form>
+    </section>
+    <nav class="nav">
+        SOMOS ESPECIALISTAS EN ENCONTRATE TUS VACACIONES DE EN SUEÑO
+        <p class="p">Contamos con una amplia selección de viajes, recomendados tanto por las características del destino
+            como de
+            sus alojamientos y actividades. Además, podrás disfrutar también de nuestras tarifas exclusivas.
+
+            Disfruta de tus vacaciones al máximo en cualquier época del año y viaja siempre al mejor precio.</p>
+    </nav>
+
+    <div class="footer">
+        <figure>
+            <img class="footer__div"
+                src="https://media.istockphoto.com/photos/back-view-of-traveler-woman-walking-in-forest-picture-id1264486309?k=20&m=1264486309&s=612x612&w=0&h=_IfhYogS8f7ownAL-B-NOSUG0DgTfzWHT70-02XHWf8=">
+        </figure>
+        <figure><img class="footer__div"
+                src="https://media.istockphoto.com/photos/retro-airliner-with-palm-trees-picture-id497597641?k=20&m=497597641&s=612x612&w=0&h=yzpo9vnoin4opZLaAqjP5dPFTcB1pEqc4s2LVfJ_l7w=">
+        </figure>
+        <figure><img class="footer__div"
+                src="https://media.istockphoto.com/photos/airplane-and-woman-at-sunset-summer-landscape-with-girl-standing-on-picture-id816320482?k=20&m=816320482&s=612x612&w=0&h=mOPopP1QLre3UgX7eMk-b2KiAY0u0L8XcMtaAyyqFBg=">
+        </figure>
+        <figure> <img class="footer__div"
+                src="https://media.istockphoto.com/photos/woman-thinking-about-her-next-travel-destination-picture-id1220610010?k=20&m=1220610010&s=612x612&w=0&h=uy3mw6_YaiWXWC1txIG5t5g6GSgWOAEtFFdE2age9lA=">
+        </figure>
+
+    </div>
+    <div class="footer2">
+        <div class="footer2__div">Peninsula</div>
+        <div class="footer2__div">Islas Canarias</div>
+        <div class="footer2__div">Europa</div>
+        <div class="footer2__div">Internacional</div>
+    </div>
+    <div class="prueba">
+        <table class="tabla" id="mostrar">
+
+            <tr>
+                <th>Nombre</th>
+                <th>Origen</th>
+                <th>Destino</th>
+                <th>Nº Personas</th>
+                <th>Fecha</th>
+            </tr>
 
 
+        </table>
+    </div>
+
+
+    <script src="agenciaDeViajes.js"></script>
 </body>
 
 </html>
