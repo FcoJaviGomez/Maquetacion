@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+}
+/* .header{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}  */
+
+
+.gridContenedor{
+    display: grid;
+    grid-template-columns: [x0]1fr [x1]1fr [x2]1fr [x3]1fr [x4]1fr [x5]1fr [x6]1fr [x7];
+    grid-template-rows: [y0]1fr [y1]1fr [y2]1fr [y3]1fr [y4]1fr [y5]1fr [y6]1fr [y7];
+    
+    /* border: 1px solid black; */
+    text-align: center;
+    
+}
+
+
+.header__partidas{
+    
+    grid-column: x2 / x5;
+    grid-row: y0 / y1;
+    font-family: 'Black Ops One', cursive;
+    font-size: 25px;
+    text-align: center;
+
+}
+.jugador1{
+    
+    grid-column: x0 / x3;
+    grid-row: y1 / y2; 
+    background-color: #EB1C36;
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.jugador2{
+    
+    grid-column: x4 / x7;
+    grid-row: y1 / y2; 
+    background-color: #0081EC;
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.tablero1{
+    
+    grid-column: x2 / x3;
+    grid-row: y2 / y3;
+    height: 100px; 
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    text-align: center;
+    font-size: 100px;
+    
+}
+.tablero2{
+    
+    grid-column: x3 / x4;
+    grid-row: y2 / y3;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    
+}
+.tablero3{
+    
+    grid-column: x4 / x5;
+    grid-row: y2 / y3;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    
+}
+.tablero4{
+    
+    grid-column: x2 / x3;
+    grid-row: y3 / y4;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    
+    
+}
+.tablero5{
+    
+    grid-column: x3 / x4;
+    grid-row: y3 / y4;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    
+}
+.tablero6{
+    
+    grid-column: x4 / x5;
+    grid-row: y3 / y4;
+    border-bottom: 3px solid black;
+    
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    
+}
+.tablero7{
+    
+    grid-column: x2 / x3;
+    grid-row: y4 / y5;
+    
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    
+    
+}
+.tablero8{
+    
+    grid-column: x3 / x4;
+    grid-row: y4 / y5;
+    
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    
+}
+.tablero9{
+    
+    grid-column: x4 / x5;
+    grid-row: y4 / y5;
+    
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    
+}
+.resetear__tablero{
+    
+    grid-column: x1 / x3;
+    grid-row: y5 / y6;
+    font-family: 'Black Ops One', cursive;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+    
+}
+.resetear__resultados{
+    
+    grid-column: x4 / x6;
+    grid-row: y5 / y6;
+    font-family: 'Black Ops One', cursive;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    
+}
+
+.a{
+   width: 80px; 
+   height: 80px;
+   margin-top: 8px;
+   text-align: center;
+   font-size: 100px;
+   background-color: white;
+}
