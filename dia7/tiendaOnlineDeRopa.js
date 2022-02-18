@@ -20,15 +20,16 @@ let arrayPrendas = []
 let arrayCarrito = []
 
 class Prendas {
-    constructor(tipo, precio) {
+    constructor(imagen, tipo, precio) {
+        this.imagen = imagen;
         this.tipo = tipo;
         this.precio = precio;
     }
 }
 
 
-let prenda1 = new Prendas("Chaleco", 20)
-let prenda2 = new Prendas("Sudadera", 15)
+let prenda1 = new Prendas("https://static.bershka.net/4/photos2/2022/V/0/2/p/8404/647/800//01/8404647800_2_4_3.jpg?t=1631711101953", "Chaleco", 20)
+let prenda2 = new Prendas("https://static.bershka.net/4/photos2/2022/V/0/2/p/2234/498/503/2234498503_2_4_6.jpg?t=1644418936880", "Sudadera", 15)
 let prenda3 = new Prendas("Pantalon", 25)
 let prenda4 = new Prendas("Chaleco", 20)
 let prenda5 = new Prendas("Sudadera", 15)
@@ -40,6 +41,9 @@ arrayPrendas.push(prenda3)
 arrayPrendas.push(prenda4)
 arrayPrendas.push(prenda5)
 arrayPrendas.push(prenda6)
+arrayPrendas.push(prenda6)
+
+
 
 
 
@@ -91,6 +95,32 @@ function anadirPrendas(pos) {
     // }
 }
 
+
+function carga() {
+
+    let contenedor = document.getElementById("tarjetas")
+
+
+    for (i = 0; i < arrayPrendas.length; i++) {
+
+        contenedor.innerHTML += ` <div class="col-4">
+    <div class="card" style="width: 18rem;">
+        <img src="${arrayPrendas[i].imagen}"
+            class="card-img-top">
+        <div class="card-body text-center">
+
+            <h5 class="card-title" id="tipo" value="Chaleco">${arrayPrendas[i].tipo}</h5>
+            <h5 id="precio">${arrayPrendas[i].precio}</h5>
+
+            <button onclick="anadirPrendas(${i})" class="btn btn-primary" id="prenda1">Añadir</button>
+        </div>
+    </div>
+    </div>`
+
+    }
+
+
+}
 
 
 
